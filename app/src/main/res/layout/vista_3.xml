@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/design_default_color_background">
+
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Superficie ocular"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imagenstandar1"
+            android:layout_width="286dp"
+            android:layout_height="148dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto1"
+            app:srcCompat="@drawable/parte_superior_del_dise" />
+
+
+        <Button
+            android:id="@+id/definicion"
+            android:layout_width="136dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#c8c8fe"
+            android:text="Definicion"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagenstandar1" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#7182fe"
+            app:layout_constraintTop_toBottomOf="@id/definicion"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:text="La Superficie ocular es un conjunto de estructuras anatómicas del ojo que tienen la función de barrera protectora tanto anatómica como inmunológica, conformada por: Los Párpados que cumplen una función anatómica de protección del globo ocular, los párpados producen la grasa de la lágrima que secretan las glándulas de Meibomio, y además ayudar a repartir la lágrima de manera uniforme sobre todo el globo ocular."
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+        <ImageView
+            android:id="@+id/imagenstandar2"
+            android:layout_width="64dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="168dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/texto2"
+            app:srcCompat="@drawable/baseline_remove_red_eye_6" />
+
+        <Button
+            android:id="@+id/caracteristicas"
+            android:layout_width="137dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#c8c8fe"
+            android:text="Caracteristicas"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imagenstandar2" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="#7182fe"
+            app:layout_constraintTop_toBottomOf="@id/caracteristicas"
+            tools:layout_editor_absoluteX="1dp" />
+
+        <Button
+            android:id="@+id/boton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider4" />
+
+        <Button
+            android:id="@+id/boton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="2"
+            app:layout_constraintStart_toEndOf="@id/boton2"
+            app:layout_constraintTop_toTopOf="@id/boton2" />
+
+        <Button
+            android:id="@+id/boton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="3"
+            app:layout_constraintStart_toEndOf="@id/boton3"
+            app:layout_constraintTop_toTopOf="@id/boton3" />
+
+        <Button
+            android:id="@+id/boton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="4"
+            app:layout_constraintStart_toEndOf="@id/boton4"
+            app:layout_constraintTop_toTopOf="@id/boton4" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="100dp"
+            android:layout_height="76dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imagenstandar1"
+            app:layout_constraintEnd_toEndOf="@+id/imagenstandar1"
+            app:layout_constraintStart_toStartOf="@+id/imagenstandar1"
+            app:layout_constraintTop_toTopOf="@+id/imagenstandar1"
+            app:srcCompat="@drawable/baseline_remove_red_eye_24" />
+
+        <Button
+            android:id="@+id/Estrucutras"
+            android:layout_width="131dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#c8c8fe"
+            android:text="Estructuras"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/boton5" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@id/Estrucutras"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="217dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="299dp"
+            android:layout_height="160dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imagenstandar1"
+            app:layout_constraintEnd_toEndOf="@+id/imagenstandar1"
+            app:layout_constraintHorizontal_bias="0.538"
+            app:layout_constraintStart_toStartOf="@+id/imagenstandar1"
+            app:layout_constraintTop_toTopOf="@+id/imagenstandar1"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/top_background" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
