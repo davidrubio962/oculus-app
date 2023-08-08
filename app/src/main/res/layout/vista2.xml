@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/top_background"
+    android:foregroundTint="#D0D3D4 ">
+
+    <Button
+        android:id="@+id/volver"
+        android:layout_width="64dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF001A"
+        android:foreground="@android:drawable/ic_media_previous"
+        android:text="."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagenusuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/volver"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/usuariocorreo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Example.com"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/imagenusuario" />
+
+    <ImageView
+        android:id="@+id/imagen2"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/usuariocorreo1"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+    <Button
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Home"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imagen2"
+        app:layout_constraintTop_toTopOf="@id/imagen2" />
+
+    <ImageView
+        android:id="@+id/imagen3"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen2"
+        app:srcCompat="@drawable/baseline_remove_red_eye_2" />
+
+    <Button
+        android:id="@+id/superficie_oc"
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Superficie oc"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imagen3"
+        app:layout_constraintTop_toTopOf="@id/imagen3" />
+
+    <ImageView
+        android:id="@+id/imagen4"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen3"
+        app:srcCompat="@drawable/baseline_monitor_heart_24" />
+
+    <Button
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Examenes convenionales"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imagen4"
+        app:layout_constraintTop_toTopOf="@id/imagen4" />
+
+    <ImageView
+        android:id="@+id/imagen5"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen4"
+        app:srcCompat="@android:drawable/ic_menu_view"
+        tools:srcCompat="@drawable/baseline_airline_seat_flat_angled_24" />
+
+    <Button
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Examenes no convencionales"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imagen5"
+        app:layout_constraintTop_toTopOf="@id/imagen5" />
+
+    <ImageView
+        android:id="@+id/imagen6"
+        android:layout_width="58dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagen5"
+        app:srcCompat="@drawable/baseline_medical_information_24" />
+
+    <Button
+        android:layout_width="142dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/white"
+        android:text="Bibliografia"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/imagen6"
+        app:layout_constraintTop_toTopOf="@id/imagen6" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
