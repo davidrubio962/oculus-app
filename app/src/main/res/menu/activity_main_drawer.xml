@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/baseline_remove_red_eye_2"
+            android:title="Superficie Ocular" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/baseline_monitor_heart_24"
+            android:title="Examenes conveocionales" />
+        <item
+            android:id="@+id/nav"
+            android:icon="@drawable/baseline_airline_seat_flat_angled_24"
+            android:title="Examenes no conveocionales" />
+        <item
+            android:id="@+id/nav_"
+            android:icon="@drawable/baseline_medical_information_24"
+            android:title="bibliografia" />
+
+    </group>
+</menu>
