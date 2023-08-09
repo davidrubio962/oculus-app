@@ -15,11 +15,17 @@
         android:id="@+id/nav_gallery"
         android:name="com.example.ocularapp.ui.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/vista_3" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.example.ocularapp.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/vista_5" />
+    <fragment
+        android:id="@+id/examen"
+        android:name="com.example.ocularapp.ui.exanoconvencionales.examenesFragment"
+        android:label="@string/menu_examenes"
+        tools:layout="@layout/vista_4"
+        />
 </navigation>

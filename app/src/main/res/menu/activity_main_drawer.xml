@@ -23,7 +23,8 @@
         <item
             android:id="@+id/nav_"
             android:icon="@drawable/baseline_medical_information_24"
-            android:title="bibliografia" />
+            android:title="bibliografia"
+            />
 
     </group>
 </menu>
